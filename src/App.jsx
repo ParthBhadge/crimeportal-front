@@ -15,7 +15,8 @@ import Emergency from './components/Emergency.jsx';
 import Login from './components/Login.jsx';
 import New from './components/New.jsx';
 import Profile from './components/Profile.jsx';
-import Safety from './components/Safety.jsx';
+
+// import Safety from './components/Safety.jsx';
 import Signup from './components/Signup.jsx';
 // import Status from './components/Status.jsx';
 import ThankYou from './components/Thankyou.jsx';
@@ -38,7 +39,7 @@ function App() {
         <Route path="/thankyou" element={<ThankYou />} />
         {/* <Route path="/status" element={<Status />} /> */}
         <Route path="/signup" element={<Signup />} />
-        <Route path="/safety" element={<Safety />} />
+        {/* <Route path="/safety" element={<Safety />} /> */}
         <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
         <Route path="/new" element={<New />} />
         <Route path="/login" element={<Login />} />

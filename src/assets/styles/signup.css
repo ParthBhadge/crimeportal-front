@@ -1,0 +1,123 @@
+/* General Styles */
+
+.signup-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.logo {
+  padding-left: 110px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff317;
+  text-decoration: none;
+}
+
+.signup-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signup-container .password-requirements,
+.signup-container .sample-password {
+  display: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.signup-container .captcha-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.signup-container .captcha-code {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signup-container button:hover {
+  background: #005580;
+  color: #fff;
+}
+
+.signup-container .cancel {
+  background: #ff4d4d;
+  color: #fff;
+}
+
+.signup-container .cancel:hover {
+  background: #e60000;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  color: #f9f9f9;
+}
+
+body.dark-theme .signup-container {
+  background: #444;
+  color: #f9f9f9;
+}
+
+body.dark-theme .signup-container input {
+  background: #555;
+  color: #f9f9f9;
+  border-color: #777;
+}
+
+body.dark-theme .signup-container input:focus {
+  border-color: #b3d9ff;
+  box-shadow: 0 0 8px rgba(179, 217, 255, 0.3);
+}
+
+body.dark-theme .signup-container .captcha-code {
+  background: #555;
+  color: #f9f9f9;
+}
+
+body.dark-theme .signup-container button {
+  background: #b3d9ff;
+  color: #333;
+}
+
+body.dark-theme .signup-container button:hover {
+  background: #8fb3ff;
+}
+
+body.dark-theme .signup-container .cancel {
+  background: #ff4d4d;
+  color: #fff;
+}
+
+body.dark-theme .signup-container .cancel:hover {
+  background: #e60000;
+}

@@ -1,0 +1,125 @@
+/* login.css */
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e6f0ff, #b3d9ff); /* Gradient background */
+  rightmargin: 25%;  
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Modern shadow effect */
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+
+
+}
+.login-container {
+  position: absolute;
+  top: 5%;
+  left: 35%;
+  /* transform: translate(-50%, -50%); */
+}
+
+
+
+.login-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.login-container h2 {
+  color: #006699;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.75rem 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container input:focus {
+  outline: none;
+  border-color: #006699;
+  box-shadow: 0 0 8px rgba(0, 102, 153, 0.3);
+}
+
+.captcha-container {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.captcha-container input {
+  flex: 1;
+  margin-right: 0.75rem;
+}
+
+.captcha-container .captcha-code {
+  background-color: #e6f0ff;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.captcha-container .captcha-code:hover {
+  background-color: #b3d9ff;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #006699;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #005580;
+  transform: translateY(-2px);
+}
+.logo {
+  margin-left: -60px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff317;
+  text-decoration: none;
+}
+
+
+.forgot-password {
+  display: block;
+  margin-top: 1rem;
+  color: #006699;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #004466;
+  text-decoration: underline;
+}

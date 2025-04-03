@@ -15,7 +15,7 @@ import Emergency from './components/Emergency.jsx';
 import Login from './components/Login.jsx';
 import New from './components/New.jsx';
 import Profile from './components/Profile.jsx';
-import Safety from './components/safety.jsx';
+import Safety from './components/Safety.jsx';
 import Signup from './components/Signup.jsx';
 // import Status from './components/Status.jsx';
 import ThankYou from './components/Thankyou.jsx';

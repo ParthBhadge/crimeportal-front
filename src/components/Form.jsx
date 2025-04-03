@@ -29,7 +29,7 @@ const Form = () => {
 
     try {
       const token = localStorage.getItem('token'); // Retrieve the token from localStorage
-      const response = await fetch('/api/complaints', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/complaints`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

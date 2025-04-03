@@ -27,7 +27,7 @@ const Admin = () => {
           return;
         }
 
-        const response = await fetch('/api/admin/complaints', {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/admin/complaints`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await response.json();
@@ -53,7 +53,7 @@ const Admin = () => {
   const updateComplaintStatus = async (id, newStatus) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`/api/admin/complaints/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/admin/complaints/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

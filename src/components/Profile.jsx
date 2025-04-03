@@ -20,7 +20,7 @@ const Profile = () => {
 
       try {
         // Fetch user profile
-        const profileResponse = await fetch('/api/auth/profile', {
+        const profileResponse = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/profile`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         const profileResult = await profileResponse.json();
@@ -33,7 +33,7 @@ const Profile = () => {
         }
 
         // Fetch user complaints
-        const complaintsResponse = await fetch('/api/complaints', {
+        const complaintsResponse = await fetch(`${import.meta.env.VITE_API_URL}/api/complaints`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         const complaintsResult = await complaintsResponse.json();
@@ -63,7 +63,7 @@ const Profile = () => {
         // Save the profile picture to the backend
         const token = localStorage.getItem('token');
         try {
-          const response = await fetch('/api/auth/profile-pic', {
+          const response = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/profile-pic`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -90,7 +90,7 @@ const Profile = () => {
     // Remove the profile picture from the backend
     const token = localStorage.getItem('token');
     try {
-      const response = await fetch('/api/auth/profile-pic', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/profile-pic`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,

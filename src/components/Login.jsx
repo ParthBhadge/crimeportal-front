@@ -18,20 +18,16 @@ const Login = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-  
-      // Check if the response has a body
-      if (response.headers.get('content-length') === '0') {
-        throw new Error('Empty response from server');
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(errorText || 'Failed to fetch');
       }
-  
+
       const result = await response.json();
-      if (response.ok) {
-        localStorage.setItem('token', result.token); // Store the token
-        alert('Login successful'); // Show success message
-        navigate('/profile'); // Redirect to profile page
-      } else {
-        alert(result.error || 'Login failed. Please check your credentials.'); // Show error message
-      }
+      localStorage.setItem('token', result.token);
+      alert('Login successful');
+      navigate('/profile');
     } catch (error) {
       console.error('Error logging in:', error);
       alert('An error occurred while logging in. Please try again later.');

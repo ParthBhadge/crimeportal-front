@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': '${import.meta.env.VITE_API_URL}', // Proxy API requests to the backend
+      '/api': 'https://crime-p-backend.onrender.com', // Proxy API requests to the backend
     },
   },
 });
